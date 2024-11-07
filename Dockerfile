@@ -9,6 +9,6 @@ RUN npm i ws express basic-auth
 COPY . .
 
 EXPOSE 80
-
+EXPOSE WEBSITE http://localhost:80
 CMD ["nodejs-proxy"]
 USER 10001
